@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #2a4452;
+  background: linear-gradient(
+    90deg,
+    rgba(42, 68, 82, 1) 0%,
+    rgba(46, 46, 117, 1) 35%,
+    rgba(0, 98, 255, 1) 100%
+  );
+}
+
+figure {
+  margin: 0;
+}
+section {
+  padding-top: 5rem;
+}
+.seccion {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.container {
+  width: 1320px;
+  border-radius: 20px;
+}
+.formulario {
+  padding: 3rem 3rem 3rem 3rem;
+  border-radius: 25px 25px 25px 25px;
+  width: 300px;
+  height: 700px;
+  margin: 3rem 2rem;
+  border: thin solid #f5bb00;
+}
+.saludoInicial {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: #f5bb00;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+}
+.description {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(148, 146, 146);
+  font-size: 12px;
+  text-align: center;
+}
+form {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: aliceblue;
+  font-size: 13px;
+}
+.btn {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 12px;
+}
+.logo {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 15px;
+  padding-bottom: 2.2rem;
+
+  img {
+    width: 50px;
+    height: 50px;
+  }
+}
+.name {
+  font-family:
+    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: rgb(240, 234, 217);
+  padding-top: 5px;
+}
+.lista {
+  background-color: #c3dae8;
+  width: 1000px;
+  border-radius: 20px;
+}
+.title {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: #555452;
+  padding-left: 2rem;
+  padding-top: 2rem;
+  font-size: 25px;
+}
+.contenedorTabla {
+  display: flex;
+  flex-direction: column;
+  padding-left: 2rem;
+}
+
+hr {
+  border: 0; 
+  height: 1px; 
+  background-color: #000000;
+}

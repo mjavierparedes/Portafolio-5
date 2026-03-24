@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <section>
+        <div class="container seccion col-6">
+
+            <div class="formulario" id="datos-formulario">
+
+                <div class="logo">
+                    <figure><img src="./assets/img/img-1.png" alt=""></figure>
+                    <p class="name">People-R</p>
+                </div>
+                <h2 class="saludoInicial">BIENVENIDO</h2>
+                <p class="description">Ingresa los siguentes datos</p>
+
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="name" aria-describedby="Nombre" />
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="username" class="form-label">Nick</label>
+                        <input type="text" class="form-control" id="username" aria-describedby="Apellido" />
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" />
+                    </div>
+
+                
+                    <button type="submit" class="btn btn-primary btn-lg">Agregar</button>
+                </form>
+
+
+            </div>
+
+            <div class="lista" id="datos-lista">
+                <h2 class="title">Lista de usuario
+                    <hr>
+                </h2>
+                
+
+            <div class="contenedorTabla">
+                <table class="tablaUsuario">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Nick</th>
+                            <th>Email</th>
+                            <th>Eliminar</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="lista-tabla">
+
+                    </tbody>
+
+                </table>
+
+                <div id="sin-registro" class="mensaje">
+                    <p>No hay registro disponible</p>
+                </div>
+
+            </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>
