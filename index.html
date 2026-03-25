@@ -12,71 +12,81 @@
 
 <body>
     <section>
-        <div class="container seccion col-6">
+        <!--CONTENEDOR PRINCIPAL-->
 
-            <div class="formulario" id="datos-formulario">
-
-                <div class="logo">
-                    <figure><img src="./assets/img/img-1.png" alt=""></figure>
-                    <p class="name">People-R</p>
-                </div>
-                <h2 class="saludoInicial">BIENVENIDO</h2>
-                <p class="description">Ingresa los siguentes datos</p>
-
-                <form>
-                    <div class="mb-3">
-                        <label for="name" class="form-label">Nombre</label>
-                        <input type="text" class="form-control" id="name" aria-describedby="Nombre" />
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="username" class="form-label">Nick</label>
-                        <input type="text" class="form-control" id="username" aria-describedby="Apellido" />
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="email" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" />
-                    </div>
-
-                
-                    <button type="submit" class="btn btn-primary btn-lg">Agregar</button>
-                </form>
-
-
-            </div>
+        <div class="d-flex justify-content-center">
 
             <div class="lista" id="datos-lista">
-                <h2 class="title">Lista de usuario
-                    <hr>
-                </h2>
-                
+                <h2 class="title">Bienvenido/a</h2>
 
-            <div class="contenedorTabla">
-                <table class="tablaUsuario">
-                    <thead>
-                        <tr>
-                            <th>Nombre</th>
-                            <th>Nick</th>
-                            <th>Email</th>
-                            <th>Eliminar</th>
-                        </tr>
-                    </thead>
+                <!--BOTÓN PARA AGREGAR NUEVO USUARIO-->
 
-                    <tbody id="lista-tabla">
-
-                    </tbody>
-
-                </table>
-
-                <div id="sin-registro" class="mensaje">
-                    <p>No hay registro disponible</p>
+                <div class="add-user">
+                    <button id="btn-agregar" class="btn btn-light">+ Agregar Usuario</button>
                 </div>
 
-            </div>
+                <!--FORMULARIO + MODAL-->
 
-            </div>
+                <div id="modal" class="modal hidden">
+                    <div class="modal-content">
+                        <span id="cerrar-modal" class="close">&times;</span>
 
+                        <div id="form-container" class="hidden">
+
+                            <div class="logo">
+                                <figure><img src="./assets/img/img-1.png" alt=""></figure>
+                                <p class="name">People-R</p>
+                            </div>
+                            <h2 class="saludoInicial">BIENVENIDO</h2>
+                            <p class="description">Ingresa los siguentes datos</p>
+
+                            <form id="form-usuario">
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Nombre</label>
+                                    <input type="text" class="form-control" id="name" aria-describedby="Nombre" />
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="username" class="form-label">Nick</label>
+                                    <input type="text" class="form-control" id="username" aria-describedby="Apellido" />
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" />
+                                </div>
+
+
+                                <button type="submit" class="btn btn-primary btn-lg">Agregar</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <!--TABLA-->
+
+                <div class="contenedorTabla">
+                    <table class="tablaUsuario table table-dark table-striped table-hover">
+                        <thead>
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Nick</th>
+                                <th>Email</th>
+                                <th>Eliminar</th>
+                            </tr>
+                        </thead>
+                        <tbody id="lista-tabla"></tbody>
+                    </table>
+
+                    <div id="loader" class="loader hidden">
+                        <div class="spinner"></div>
+                        <p>Cargando usuarios...</p>
+                    </div>
+                    <div id="sin-registro" class="mensaje">
+                        <p>No hay registro disponible</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
